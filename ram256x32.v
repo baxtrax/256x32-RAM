@@ -1,4 +1,4 @@
-/* A 16x4-bit RAM Module.
+/* A 64x8-bit RAM Module.
  * The Chipselect needs to be low to activate memory.
  * rw = 0 : Read 
  * rw = 1 : Write
@@ -6,14 +6,15 @@
  * Author: Bradley Gathers
  * Date: 3/23/2022
 */
-module ram16x4(data_in, data_out, adrs, cs, rw);
+module ram256x32(data_in, data_out, adrs, cs, rw);
 
 	// I/O and Parameters
 	input cs; // Enable / Disable data lines
 	input rw;
-	input [3:0] data_in, adrs;
-	output reg [3:0] data_out;
-	reg [3:0] mem[15:0]; // 16, 4-bit width array
+	input [7:0] adrs;
+	input [31:0] data_in;
+	output reg [31:0] data_out;
+	reg [31:0] mem[255:0];
 	
 	always @(*) begin
 		if (!cs) begin
