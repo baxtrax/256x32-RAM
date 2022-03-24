@@ -1,0 +1,13 @@
+# Typical Quartus Prime Project file exclusion list
+db
+incremental_db
+output_files
+simulation
+De10_LITE_Golden_Top.v
+*.v.bak
+*.qpf
+*.qsf
+*.qdf
+*.rpt
+*.json
+
