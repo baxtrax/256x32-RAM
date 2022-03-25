@@ -14,9 +14,9 @@ The point of RAM is to give the CPU somewhere to quickly store and read data is 
 The RAM module is composed into one file. The testbench is also included to verify its functionality. 
 
 #### Writing/Reading Verification:
-Wrote Values
+##### Wrote Values
 ![alt text](https://github.com/baxtrax/256x32-RAM/blob/main/Images/Lab5Write.png?raw=true)
-Reading
+##### Reading
 ![alt text](https://github.com/baxtrax/256x32-RAM/blob/main/Images/Lab5Read.png?raw=true)
 
 ## Running it
