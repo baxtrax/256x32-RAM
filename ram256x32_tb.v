@@ -9,6 +9,7 @@ module ram256x32_tb();
 	// I/O and Parameters
 	reg cs; 
 	reg rw;
+	reg clk;
 	reg [31:0] data_in;
 	reg[7:0] adrs;
 	wire [31:0] data_out;
@@ -19,6 +20,7 @@ module ram256x32_tb();
 	initial begin
 		cs = 1'h0;
 		rw = 1'h0;
+		clk = 1'h0;
 		data_in = 4'h0;
 		adrs = 4'h0;
 	end
@@ -27,7 +29,10 @@ module ram256x32_tb();
 						.data_out(data_out), 
 						.adrs(adrs), 
 						.cs(cs), 
-						.rw(rw));
+						.rw(rw),
+						.clk(clk));
+	
+	always #5 clk = !clk;
 	
 	// Test series list
 	initial begin

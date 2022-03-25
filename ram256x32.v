@@ -6,17 +6,18 @@
  * Author: Bradley Gathers
  * Date: 3/23/2022
 */
-module ram256x32(data_in, data_out, adrs, cs, rw);
+module ram256x32(data_in, data_out, adrs, cs, rw, clk);
 
 	// I/O and Parameters
 	input cs; // Enable / Disable data lines
 	input rw;
+	input clk;
 	input [7:0] adrs;
 	input [31:0] data_in;
 	output reg [31:0] data_out;
 	reg [31:0] mem[255:0];
 	
-	always @(*) begin
+	always @(posedge clk) begin
 		if (!cs) begin
 			if (rw) begin
 			mem[adrs] <= data_in; // Write
