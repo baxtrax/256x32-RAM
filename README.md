@@ -7,7 +7,6 @@ A overview diagram of the RAM and its inputs and outputs
 
 ![alt text](https://github.com/baxtrax/256x32-RAM/blob/main/Images/Level0.png?raw=true)
 
-
 The point of RAM is to give the CPU somewhere to quickly store and read data is other parts of the memory hierarchy are full. Such as the Cache.
 
 ### Testbench and verification
