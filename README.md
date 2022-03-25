@@ -13,10 +13,11 @@ The point of RAM is to give the CPU somewhere to quickly store and read data is 
 ### Testbench and verification
 The RAM module is composed into one file. The testbench is also included to verify its functionality. 
 
-#### Storing Verification:
-![alt text](https://github.com/baxtrax/<imagehere>)
-#### Reading Verification
-![alt text](https://github.com/baxtrax/<imagehere>)
+#### Writing/Reading Verification:
+Wrote Values
+![alt text](https://github.com/baxtrax/256x32-RAM/blob/main/Images/Lab5Write.png?raw=true)
+Reading
+![alt text](https://github.com/baxtrax/256x32-RAM/blob/main/Images/Lab5Read.png?raw=true)
 
 ## Running it
 You can use these files with any type of simulation software. This project I personally used Quartus Prime and its simulation package that comes with named ModelSim(Now updated to QuestaSim) but any software that can run and simulate verilog code should do just fine as well.
