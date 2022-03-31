@@ -1,4 +1,4 @@
-/* A 64x8-bit RAM Module.
+/* A 256x32-bit RAM Module.
  * The Chipselect needs to be low to activate memory.
  * rw = 0 : Read 
  * rw = 1 : Write
